@@ -54,14 +54,14 @@ class BlogList extends React.Component{
                                                    
                                                 <div className="col-md-12" key={blog._id}>
 
-                                                    <div className="card m-3">
+                                                    <div className="card mt-3">
                                                         
                                                         <div className="card-header text-center bg-warning text-white">
                                                             <div> <span className="topic">Topic</span> : <span className="topic-text">{blog.name}</span></div>
                                                         </div>
 
                                                         <div className="card-body bg-info text-white">
-                                                            <div className="container">
+                                                            {/* <div className="container-fluid"> */}
                                                                 <div className="row flex-column-reverse flex-md-row">
                                                                     <div className="col-md-7">
                                                                     <span><span className="heading">Heading</span> : <span className="heading-text">{blog.heading}</span></span><br/>
@@ -72,7 +72,7 @@ class BlogList extends React.Component{
                                                                     <img className="img-fluid blog-image" src={blog.image} alt="" width="400" height="250"/>
                                                                     </div>
                                                                 </div>
-                                                            </div>
+                                                            {/* </div> */}
                                                         </div>
 
                                                         <div className="card-footer bg-success text-white">
